@@ -72,21 +72,21 @@ namespace Utilities.Extentions
         {
             Quaternion rotation = transform.rotation;
             rotation.x = rot;
-            // transform.rotation += new Quaternion(rotation);
+            transform.rotation *= rotation;
         }
 
         public static void AddRotaY(this Transform transform, float rot)
         {
             Quaternion rotation = transform.rotation;
             rotation.y = rot;
-            // transform.rotation += rotation;
+            transform.rotation *= rotation;
         }
 
         public static void AddRotaZ(this Transform transform, float rot)
         {
             Quaternion rotation = transform.rotation;
             rotation.z = rot;
-            // transform.rotation += rotation;
+            transform.rotation *= rotation;
         }
         public static void SetRandomPos(this Transform transform)
         {
